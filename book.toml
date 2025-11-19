@@ -1,0 +1,10 @@
+[book]
+title = "CTF Writeups"
+description = "A collection of CTF challenge writeups organized by events."
+authors = ["Adwaith Shan"]
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+curly-quotes = true
+mathjax-support = true
