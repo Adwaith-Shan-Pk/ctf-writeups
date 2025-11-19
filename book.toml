@@ -1,10 +1,25 @@
 [book]
-title = "CTF Writeups"
-description = "A collection of CTF challenge writeups organized by events."
+title = "Adwaith's CTF Writeups"
+description = "Security research, CTF solutions, and exploits."
 authors = ["Adwaith Shan"]
+language = "en"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "book"
 
 [output.html]
 default-theme = "navy"
 preferred-dark-theme = "navy"
-curly-quotes = true
+theme = "navy"
+git-repository-url = "https://github.com/Adwaith-Shan-Pk/ctf-writeups"
+edit-url-template = "https://github.com/Adwaith-Shan-Pk/ctf-writeups/edit/main/{path}"
+additional-css = ["custom.css"] # <--- This loads our custom style
 mathjax-support = true
+curly-quotes = true
+copy-fonts = true
+
+[output.html.search]
+enable = true
+limit_results = 15

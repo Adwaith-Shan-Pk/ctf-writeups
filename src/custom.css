@@ -1,0 +1,81 @@
+/* --- IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
+
+/* --- GENERAL VARIABLES --- */
+:root {
+    --sidebar-bg: #0f0f0f;
+    --bg: #161616;
+    --fg: #e0e0e0;
+    --accent: #00ff41; /* Hacker Green */
+    --link-color: #4af626;
+    --code-bg: #111;
+}
+
+/* --- TYPOGRAPHY --- */
+body, .markdown-section {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h1 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+
+/* --- SIDEBAR --- */
+.sidebar {
+    background-color: var(--sidebar-bg);
+}
+.sidebar .chapter li a.active {
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    padding-left: 5px;
+}
+
+/* --- CODE BLOCKS --- */
+pre, code {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--code-bg);
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* --- CUSTOM ALERTS (Admonitions) --- */
+/* Use these in your markdown! */
+
+/* FLAG BOX */
+.flag-box {
+    background-color: rgba(0, 255, 65, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 15px;
+    margin: 20px 0;
+    font-family: 'JetBrains Mono', monospace;
+    color: #fff;
+}
+.flag-box::before {
+    content: "🚩 CAPTURED FLAG";
+    display: block;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+/* INFO BOX */
+.info-box {
+    background-color: rgba(66, 135, 245, 0.1);
+    border-left: 4px solid #4287f5;
+    padding: 15px;
+    margin: 15px 0;
+}
+.info-box strong { color: #4287f5; }
+
+/* IMAGES */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}

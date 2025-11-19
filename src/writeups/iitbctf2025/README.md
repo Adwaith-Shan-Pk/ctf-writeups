@@ -1,3 +1,1 @@
-This contains writeups of the iitb2025 ctf qualifiers
-
-
+# **This contains writeups of the IITB2025 ctf qualifiers**
