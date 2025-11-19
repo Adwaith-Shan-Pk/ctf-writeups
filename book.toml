@@ -12,12 +12,11 @@ build-dir = "book"
 [output.html]
 default-theme = "navy"
 preferred-dark-theme = "navy"
-theme = "navy"
 git-repository-url = "https://github.com/Adwaith-Shan-Pk/ctf-writeups"
 edit-url-template = "https://github.com/Adwaith-Shan-Pk/ctf-writeups/edit/main/{path}"
-additional-css = ["custom.css"] # <--- This loads our custom style
+additional-css = ["custom.css"]
 mathjax-support = true
-curly-quotes = true
+smart-punctuation = true 
 copy-fonts = true
 
 [output.html.search]
